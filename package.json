@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/bizbunny/cuteEggTimer/issues"
   },
-  "homepage": "https://github.com/bizbunny/cuteEggTimer#readme"
+  "homepage": "https://github.com/bizbunny/cuteEggTimer#readme",
+  "devDependencies": {
+    "electron": "^35.1.5"
+  }
 }
