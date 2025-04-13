@@ -1,0 +1,22 @@
+{
+  "name": "cuteeggtimer",
+  "version": "1.0.0",
+  "description": "get to know Electron with a cute lil app. Original concept by @nashallery on Youtube",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bizbunny/cuteEggTimer.git"
+  },
+  "keywords": [
+    "egg"
+  ],
+  "author": "bizbunny",
+  "license": "MIT for code. Art is drawn by me. All rights reserved.",
+  "bugs": {
+    "url": "https://github.com/bizbunny/cuteEggTimer/issues"
+  },
+  "homepage": "https://github.com/bizbunny/cuteEggTimer#readme"
+}
