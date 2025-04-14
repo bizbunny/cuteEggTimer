@@ -49,11 +49,11 @@ select {
 .container {
     position: relative;
     width: 384px;
-    /* Match your window width */
     height: 600px;
-    /* Match your window height */
     margin: 0 auto;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 /*---frame stuff---*/
 .app-frame {
@@ -145,11 +145,12 @@ select {
     filter: drop-shadow(0 4px 8px rgba(var(--shadow-color), 0.15));
     /*background: transparent !important; Force no background */
     /*mix-blend-mode: multiply; Helps with transparency */
-    object-fit: contain;
-    /* top: 0;
-    left: 0; */
+    object-fit: cover;
+    object-position: center 30%;/* Adjust vertical position (30% from top) */
     z-index: 1;/* Behind the content */
     pointer-events: none;/* Allows clicks to pass through */
+    top: -10%;/* Pull image up */
+    left: -5%;/* Center the wider image */
 }
 
 /* Floating animation */
@@ -193,21 +194,18 @@ select {
     /* Adjust as needed */
     pointer-events: none;
 }
-#start-btn, #back-btn {
+#start-btn, #back-btn, #snooze-btn, #stop-btn{
     background-color: var(--lightbrown);
-    color: var(--brown);
-    border: 2px solid var(--brown);
-    border-radius: 8px;
-    padding: 12px 24px;
-    font-family: "Pixelify Sans";
-    font-size: 18px;
-    cursor: pointer;
-    margin-top: 90px;
-    /*position: relative; This makes it respect z-index */
-    font-size: 18px;
-        cursor: pointer;
-        box-shadow: (0 4px 8px rgba(var(--shadow-color), 0.15));
-        transition: all 0.3s ease;
+        color: var(--brown);
+        border: 2px solid var(--brown);
+        border-radius: 8px;
+        padding: 10px 20px;
+        font-family: "Pixelify Sans";
+        font-size: 16px;
+        min-width: 80px;/* Ensure consistent width */
+        z-index: 100;/* Keep above other elements */
+        position: relative;
+        margin-top: 20px;
 }
 #start-btn:hover, #back-btn:hover{
     transform: translateY(-2px);
@@ -246,4 +244,92 @@ select {
     border: 0;
 }
 /*---timer page---*/
+#timer-screen{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;/* Align content to top */
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+#timer-display{
+    margin: 10px 0;
+    font-size: 4rem;
+    color: var(--brown);
+    position: relative;
+    z-index: 10;
+}
+
+.timer-controls {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    /* Ensure some space at bottom */
+    position: relative;
+    z-index: 10;
+}
+/* Animation Container */
+.egg-animation-container {
+    width: 384px;/* Match your container width */
+    height: 350px;/* Set a fixed height for cropping */
+    overflow: hidden;/* This will crop anything outside the container */
+    position: relative;
+    margin: 0 auto 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;/* Align to top to prevent bottom cropping */
+}
+
+.egg-animation-frame {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    opacity: 0;
+    transition:
+        opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: drop-shadow(0 2px 4px rgba(var(--shadow-color), 0.2));
+    transform-style: preserve-3d;
+}
+
+.egg-animation-frame.active {
+    animation: gentleBounce 0.5s ease-in-out;
+}
+
+@keyframes gentleBounce {
+
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-5px) scale(1.05);
+    }
+}
+
+.egg-animation-frame.inactive {
+    transform: scale(0.95) rotateZ(1deg);
+}
+.urgent-animation .egg-animation-frame {
+    filter: hue-rotate(20deg) brightness(1.1);
+    transition-duration: 0.1s;
+}
+#egg-anim {
+    width: 100%;
+    height: auto;/* Maintain aspect ratio */
+    object-fit: cover;
+    object-position: top center;/* Always align to top */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 /*---done page---*/
