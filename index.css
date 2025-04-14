@@ -1,0 +1,249 @@
+/*---Colors---*/
+:root{
+    --orange: #F7B463FF;
+    --white: #FFFFFF;
+    --lightorange: #F5CE80FF;
+    --black: #362727FF;
+    --lightyellow: #FFF5BEFF;
+    --yellow: #FFECA0FF;
+    --darkyellow: #FFE382FF;
+    --lightbrown: #FCE6ADFF;
+    --brown: #A55C0AFF;
+    --shadow-color: 165, 92, 10;/* RGB values of --brown */
+}
+
+/*---Text Style---*/
+body{
+    -webkit-app-region: drag;
+    /*background image*/
+    background-color: var(--lightyellow);
+    /* Use your color variable */
+    background-image: url('./assets/egg\ timer\ bg.png');
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    /*text*/
+    color: var(--black);
+    text-align:center;
+    font-family: "Pixelify Sans";
+    .pixelify-sans-fontfamily {
+        font-family: "Pixelify Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+h1{
+
+}
+/*---general appearance---*/
+button,
+input,
+select {
+    -webkit-app-region: no-drag;
+}
+.container {
+    position: relative;
+    width: 384px;
+    /* Match your window width */
+    height: 600px;
+    /* Match your window height */
+    margin: 0 auto;
+    overflow: hidden;
+}
+/*---frame stuff---*/
+.app-frame {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+.frame-image {
+    /* background-color: var(--darkyellow); */
+    position: absolute;
+    width: 384px;
+    height: 600px;
+    object-fit: contain;
+    z-index: -1;
+    left: 50%;/* Center the image */
+    transform: translateX(-50%);/* Center the image */
+}
+
+.window-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/*---window controls---*/
+.window-controls {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    gap: 12px;
+    z-index: 1000;
+    -webkit-app-region: no-drag;
+}
+
+.window-control {
+    background: transparent !important;
+    border: none;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;/* Remove any default padding */
+    margin: 0;/* Remove any default margins */
+}
+
+.window-control img {
+    width: 100%;/* Make image fill the button */
+    height: 100%;
+    /* filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5)); */
+    transition: all 0.2s ease;
+    margin-bottom: 10px;
+}
+
+.window-control:hover img, .egg-option:hover {
+    transform: scale(1.1);
+}
+
+/*---start page---*/
+.interactive-content {
+    position: relative;
+    z-index: 2;
+    /* justify-content: center; */
+    /* height: 100%; */
+    /* padding-top: 250px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 380px;
+}
+/* Decorative Image Styles */
+.decoration-image {
+    position: absolute;
+    width: 100%;/* Adjust size as needed */
+    height: 100%;
+    animation: float 3s ease-in-out infinite;
+    filter: drop-shadow(0 4px 8px rgba(var(--shadow-color), 0.15));
+    /*background: transparent !important; Force no background */
+    /*mix-blend-mode: multiply; Helps with transparency */
+    object-fit: contain;
+    /* top: 0;
+    left: 0; */
+    z-index: 1;/* Behind the content */
+    pointer-events: none;/* Allows clicks to pass through */
+}
+
+/* Floating animation */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+#main-screen {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#main-screen p {
+    /* position: relative; */
+    z-index: 2;
+    margin-top: 20px;
+    color: var(--brown);
+}
+.content-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.decoration-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 0;
+    opacity: 0.7;
+    /* Adjust as needed */
+    pointer-events: none;
+}
+#start-btn, #back-btn {
+    background-color: var(--lightbrown);
+    color: var(--brown);
+    border: 2px solid var(--brown);
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-family: "Pixelify Sans";
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 90px;
+    /*position: relative; This makes it respect z-index */
+    font-size: 18px;
+        cursor: pointer;
+        box-shadow: (0 4px 8px rgba(var(--shadow-color), 0.15));
+        transition: all 0.3s ease;
+}
+#start-btn:hover, #back-btn:hover{
+    transform: translateY(-2px);
+    box-shadow: (0 4px 8px rgba(var(--shadow-color), 0.15));
+}
+/*---choices page---*/
+#selection-screen {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    /* Push content down from top */
+    box-sizing: border-box;
+}
+#selection-screen h2 {
+    color: var(--black);
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.egg-option{
+    background: transparent;
+    border: none;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+/*---timer page---*/
+/*---done page---*/

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Egg Timer</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preload" href="./assets/start menu/egg timer start menu.png" as="Egg colored Bunny Decoration">
+</head>
+
+<body>
+    <div class="app-frame">
+        <img src="./assets/egg timer frame.png" class="frame-image" alt="App Frame">
+    <!--window controls-->
+    <div class="window-controls">
+        <button id="minimize-btn" class="window-control">
+            <img src="assets/frame icons/min button.png" alt="Minimize">
+        </button>
+        <button id="close-btn" class="window-control">
+            <img src="assets/frame icons/x button.png" alt="Close">
+        </button>
+    </div>
+    <!-- <img src="./assets/start menu/egg timer start menu.png" class="decoration-bg" alt="Egg colored Bunny Decoration"> -->
+    <!--container-->
+    <div class="container">
+        <!-- <h1>🥚 Egg Timer 🍳</h1> -->
+
+        <div id="main-screen">
+            <div class="content-wrapper">
+                <img src="./assets/start menu/egg timer start menu.png" class="decoration-image" alt="Egg colored Bunny Decoration">
+                <div class="interactive-content">
+                    <button id="start-btn">Start Cooking</button>
+                    <p>Made with Electron</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="selection-screen" style="display: none;">
+            <h2>Select Egg Style</h2>
+            <div class="options">
+                <button class="egg-option" data-time="180">
+                    <img src="assets/choice menu/softBoiled.png" alt="Soft Boiled">
+                    <span class="visually-hidden">Soft Boiled (3 min)</span>
+                </button>
+                <button class="egg-option" data-time="420">
+                    <img src="assets/choice menu/hardBoiled.png" alt="Hard Boiled">
+                    <span class="visually-hidden">Hard Boiled (7 min)</span>
+                </button>
+                <button class="egg-option" data-time="240">
+                    <img src="assets/choice menu/eggToast.png" alt="Fried">
+                    <span class="visually-hidden">Fried (4 min)</span>
+                </button>
+                <button class="egg-option" data-time="150">
+                    <img src="assets/choice menu/scrambledEggs.png" alt="Scrambled">
+                    <span class="visually-hidden">Scrambled (2.5 min)</span>
+                </button>
+            </div>
+            <button id="back-btn" class="secondary-btn">Back</button>
+        </div>
+
+        <div id="timer-screen" style="display: none;">
+            <div id="timer-display">00:00</div>
+            <div class="timer-controls">
+                <button id="snooze-btn">Pause</button>
+                <button id="stop-btn">Stop</button>
+            </div>
+        </div>
+
+        <div id="completion-screen" style="display: none;">
+            <h2>Your Eggs Are Ready!</h2>
+            <p>Enjoy your perfectly cooked eggs!</p>
+            <div class="completion-buttons">
+                <button id="close-btn">Cook Again</button>
+                <button id="exit-btn">Exit</button>
+            </div>
+        </div>
+    </div><!--container div-->
+</div><!--app-frame div-->
+    <script src="renderer.js"></script>
+</body>
+
+</html>
