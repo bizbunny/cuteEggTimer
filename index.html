@@ -41,29 +41,36 @@
         <div id="selection-screen" style="display: none;">
             <h2>Select Egg Style</h2>
             <div class="options">
-                <div class="option-pair">
-                    <button class="egg-option" data-time="180">
-                        <img src="assets/choice menu/softBoiled.png" alt="Soft Boiled">
-                        <span class="visually-hidden">Soft Boiled (3 min)</span>
-                    </button>
-                    <p class="egg-label">Soft Boiled</p>
-                    <button class="egg-option" data-time="240">
-                        <img src="assets/choice menu/eggToast.png" alt="Fried">
-                        <span class="visually-hidden">Fried (4 min)</span>
-                    </button>
-                    <p class="egg-label">Fried</p>
+                <!-- First row -->
+                <div class="option-row">
+                    <div class="egg-choice">
+                        <button class="egg-option" data-time="180">
+                            <img src="assets/choice menu/softBoiled.png" alt="Soft Boiled (3 min)">
+                        </button>
+                        <p class="egg-label">Soft Boiled</p>
+                    </div>
+                    <div class="egg-choice">
+                        <button class="egg-option" data-time="420">
+                            <img src="assets/choice menu/hardBoiled.png" alt="Hard Boiled (7 min)">
+                        </button>
+                        <p class="egg-label">Hard Boiled</p>
+                    </div>
                 </div>
-                <div class="option-pair">
-                    <button class="egg-option" data-time="420">
-                        <img src="assets/choice menu/hardBoiled.png" alt="Hard Boiled">
-                        <span class="visually-hidden">Hard Boiled (7 min)</span>
-                    </button>
-                    <p class="egg-label">Hard Boiled</p>
-                    <button class="egg-option" data-time="150">
-                        <img src="assets/choice menu/scrambledEggs.png" alt="Scrambled">
-                        <span class="visually-hidden">Scrambled (2.5 min)</span>
-                    </button>
-                    <p class="egg-label">Scrambled</p>
+            
+                <!-- Second row -->
+                <div class="option-row">
+                    <div class="egg-choice">
+                        <button class="egg-option" data-time="240">
+                            <img src="assets/choice menu/eggToast.png" alt="Fried (4 min)">
+                        </button>
+                        <p class="egg-label">Fried</p>
+                    </div>
+                    <div class="egg-choice">
+                        <button class="egg-option" data-time="150">
+                            <img src="assets/choice menu/scrambledEggs.png" alt="Scrambled (2.5 min)">
+                        </button>
+                        <p class="egg-label">Scrambled</p>
+                    </div>
                 </div>
             </div><!--options div--->
             <button id="back-btn" class="secondary-btn">Back</button>
@@ -81,7 +88,7 @@
         </div>
 
         <div id="completion-screen" style="display: none;">
-
+            <img src="./assets/done menu/egg timer done.png" id="egg-done" />
             <h2>Your Eggs Are Ready!</h2>
             <p>Enjoy your perfectly cooked eggs!</p>
             <div class="completion-buttons">

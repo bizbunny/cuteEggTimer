@@ -213,23 +213,42 @@ select {
 }
 /*---choices page---*/
 .options{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);/* Two equal columns */
-    gap: 20px;/* Space between items */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;/* Space between rows */
     width: 100%;
-    padding: 0 20px;
+    padding: 0 30px 0 15px;/*more padding on right*/
     box-sizing: border-box;
 }
-.option-pair {
+.option-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;/* Space between columns */
+    padding-left: 10px;
+}
+.egg-choice {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: 6px;/* Space between image and text */
+    width: 45%;
+}
+
+.egg-option {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.egg-option img {
+    width: 125px;
+    height: auto;
 }
 .egg-label {
-    display: flex;
-    align-items: center;/* Vertical center */
-    gap: 15px;/* Space between image and text */
+    margin: 0;
+    color: var(--black);
+    font-size: 18px;
+    text-align: center;
 }
 #selection-screen {
     position: relative;
