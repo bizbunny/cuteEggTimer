@@ -35,6 +35,7 @@ const eggFrames = [
 let currentFrame = 0;
 let animationInterval;
 let isPaused = false;
+let ringSound = null;
 
 // Start/stop controls
 function startEggAnimation() {
@@ -125,6 +126,7 @@ function startCountdown(selectedDuration) {
             
             if (timeLeft <= 0) {
                 stopEggAnimation();
+                playAlarmSound();
                 new Notification('Egg Timer', { 
                     body: 'Your eggs are ready! 🥚' 
                 });
@@ -152,6 +154,19 @@ function playPopSound() {
     popSound.currentTime = 0; // Rewind to start
     popSound.play();
 }
+function playAlarmSound() {
+    ringSound = document.getElementById('alarm-ring');
+    ringSound.currentTime = 0; //Rewind to start
+    ringSound.loop = true; //loop the sound until it stops
+    ringSound.play();
+}
+
+function stopAlarmSound() {
+    if(ringSound) {
+        ringSound.pause();
+        ringSound.currentTime = 0;
+    }
+}
 
 // Event Listeners
 startBtn.addEventListener('click', () => {
@@ -178,6 +193,7 @@ snoozeBtn.addEventListener('click', () => {
 
 cookAgainBtn.addEventListener('click', () => {
     playPopSound();
+    stopAlarmSound();
     showScreen('main');
 });
 
