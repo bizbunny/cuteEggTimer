@@ -15,9 +15,7 @@
 /*---Text Style---*/
 body{
     -webkit-app-region: drag;
-    /*background image*/
     background-color: var(--lightyellow);
-    /* Use your color variable */
     background-image: url('./assets/egg\ timer\ bg.png');
     background-blend-mode: overlay;
     background-size: cover;
@@ -62,14 +60,11 @@ select {
     height: 100vh;
     overflow: hidden;
     display: flex;
-    justify-content: center;
-    /* Center horizontally */
-    align-items: center;
-    /* Center vertically */
+    justify-content: center;/* Center horizontally */
+    align-items: center;/* Center vertically */
 }
 
 .frame-image {
-    /* background-color: var(--darkyellow); */
     position: absolute;
     width: 384px;
     height: 600px;
@@ -114,7 +109,6 @@ select {
 .window-control img {
     width: 100%;/* Make image fill the button */
     height: 100%;
-    /* filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5)); */
     transition: all 0.2s ease;
     margin-bottom: 10px;
 }
@@ -166,7 +160,6 @@ select {
     height: 100%;
 }
 #main-screen p {
-    /* position: relative; */
     z-index: 2;
     margin-top: 20px;
     color: var(--brown);
@@ -188,7 +181,6 @@ select {
     object-fit: contain;
     z-index: 0;
     opacity: 0.7;
-    /* Adjust as needed */
     pointer-events: none;
 }
 #start-btn, #back-btn, #snooze-btn, #stop-btn, #exit-btn, #cook-again-btn{
@@ -308,8 +300,7 @@ select {
     justify-content: center;
     width: 100%;
     padding: 0 20px;
-    margin-bottom: 20px;
-    /* Ensure some space at bottom */
+    margin-bottom: 20px;/* Ensure some space at bottom */
     position: relative;
     z-index: 10;
 }
