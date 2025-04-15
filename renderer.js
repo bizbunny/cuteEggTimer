@@ -54,7 +54,6 @@ function startEggAnimation() {
     animationInterval = setInterval(() => {
         if (!isPaused) {
             currentFrame = (currentFrame + 1) % eggFrames.length;
-            console.log('Showing frame:', currentFrame); // Debug logging
             eggElement.src = eggFrames[currentFrame];
         }
     }, frameDelay);
