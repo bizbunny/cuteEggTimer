@@ -19,7 +19,6 @@ All art used is drawn by me using Pixel Studio
 ![minimizeicon](https://github.com/bizbunny/cuteEggTimer/blob/main/assets/frame%20icons/min%20button.png)
 ![closeIcon](https://github.com/bizbunny/cuteEggTimer/blob/main/assets/frame%20icons/x%20button.png)
 ![startmenuImage](https://github.com/bizbunny/cuteEggTimer/blob/main/assets/start%20menu/egg%20timer%20start%20menu.png)
-![startmenuButton](https://github.com/bizbunny/cuteEggTimer/blob/main/assets/start%20menu/egg%20timer%20start%20button.png)
 ![softBoiled](https://github.com/bizbunny/cuteEggTimer/blob/main/assets/choice%20menu/softBoiled.png)
 ![hardBoiled](https://github.com/bizbunny/cuteEggTimer/blob/main/assets/choice%20menu/hardBoiled.png)
 ![eggToast](https://github.com/bizbunny/cuteEggTimer/blob/main/assets/choice%20menu/eggToast.png)
