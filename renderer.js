@@ -21,7 +21,7 @@ const startBtn = document.getElementById('start-btn');
 const backBtn = document.getElementById('back-btn');
 const stopBtn = document.getElementById('stop-btn');
 const snoozeBtn = document.getElementById('snooze-btn');
-const closeBtn = document.getElementById('close-btn');
+const cookAgainBtn = document.getElementById('cook-again-btn');
 const exitBtn = document.getElementById('exit-btn');
 const eggOptions = document.querySelectorAll('.egg-option');
 
@@ -204,7 +204,7 @@ stopBtn.addEventListener('click', () => {
 
 snoozeBtn.addEventListener('click', togglePause);
 
-closeBtn.addEventListener('click', () => {
+cookAgainBtn.addEventListener('click', () => {
     showScreen('main');
 });
 
