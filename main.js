@@ -2,18 +2,18 @@
 const { app, BrowserWindow, Menu, ipcMain } = require('electron');
 const path = require('path');
 
-let mainWindow;
+let mainWindow;//declare a window var
 
-ipcMain.on('minimize-window', () => {
+ipcMain.on('minimize-window', () => {//event listener to allow us to minimize window
     mainWindow.minimize();
 });
 
-ipcMain.on('close-window', () => {
+ipcMain.on('close-window', () => {//event listener to allow us to close a window
     mainWindow.close();
 });
 
-function createWindow() {
-    mainWindow = new BrowserWindow({
+function createWindow() {//self explanatory
+    mainWindow = new BrowserWindow({//constructing a new one
         width: 384,
         height: 600,
         frame: false, // This removes the default window controls
@@ -21,8 +21,8 @@ function createWindow() {
         resizable: false, // fixed window size
         webPreferences: {
             nodeIntegration: true,
-            contextIsolation: false,
-            webSecurity: false, // Only needed if you get CORS errors with local images
+            contextIsolation: false,//separate running environment of website / app code from its underlying framework or core functionalities
+            webSecurity: false, // Only needed if you get CORS errors (when web page attempts to access resources form different domain than the one that served the page) with local images
         }
     });
 
