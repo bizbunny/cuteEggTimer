@@ -36,34 +36,6 @@ let currentFrame = 0;
 let animationInterval;
 let isPaused = false;
 
-// Preload images
-function preloadImages() {
-    eggFrames.forEach(frame => {
-        const img = new Image();
-        img.src = frame;
-    });
-}
-
-// Smooth animation loop
-function animateEgg(timestamp) {
-    if (!lastFrameTime) lastFrameTime = timestamp;
-    const elapsed = timestamp - lastFrameTime;
-    
-    if (elapsed > frameDuration && !isPaused) {
-        lastFrameTime = timestamp;
-        updateEggFrame();
-    }
-    
-    animationId = requestAnimationFrame(animateEgg);
-}
-
-// Frame update with transitions
-function updateEggFrame() {
-    const eggElement = document.getElementById('egg-anim');
-    currentFrame = (currentFrame + 1) % eggFrames.length;
-    eggElement.src = eggFrames[currentFrame];
-}
-
 // Start/stop controls
 function startEggAnimation() {
     const eggElement = document.getElementById('egg-anim');
@@ -106,19 +78,6 @@ stopBtn.addEventListener('click', () => {
     clearInterval(timer);
     showScreen('main');
 });
-
-function updateFrameSpeed() {
-    // Speed up animation when time is running low
-    const timeFraction = timeLeft / duration;
-    frameDuration = 100 + (150 * timeFraction); // Ranges from 100-250ms
-}
-
-function progressiveAnimation() {
-    if (timeLeft < duration/2) { // Second half of timer
-        document.querySelector('.egg-animation-container')
-            .classList.add('urgent-animation');
-    }
-}
 // Timer display
 const timerDisplay = document.getElementById('timer-display');
 
