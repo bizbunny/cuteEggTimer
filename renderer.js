@@ -24,6 +24,7 @@ const snoozeBtn = document.getElementById('snooze-btn');
 const cookAgainBtn = document.getElementById('cook-again-btn');
 const exitBtn = document.getElementById('exit-btn');
 const eggOptions = document.querySelectorAll('.egg-option');
+const snoozeAlarmBtn = document.getElementById('snooze-alarm-btn');
 
 // Animation variables
 const eggFrames = [
@@ -208,6 +209,17 @@ eggOptions.forEach(option => {
         const duration = parseInt(option.getAttribute('data-time'));
         startCountdown(duration);
     });
+});
+
+snoozeAlarmBtn.addEventListener('click', () => {
+    playPopSound(); // Play the pop sound for feedback
+    stopAlarmSound(); // Stop the ringing alarm
+    
+    snoozeAlarmBtn.textContent = 'Alarm Stopped';//Change button text to indicate alarm is off
+    
+    setTimeout(() => {//Reset button text after delay
+        snoozeAlarmBtn.textContent = 'Snooze';
+    }, 2000);
 });
 
 // Initialize
