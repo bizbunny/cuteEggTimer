@@ -1,8 +1,12 @@
 # cuteEggTimer
 
-This was made so I could get to know Electron
+This was made so I could get to know Electron.
 
 # Credits
+
+## Concept
+
+This entire app is based off of @Nashallery 's app (You can find her on Youtube and Instagram). I also took inspiration from her in designing my egg timer too!
 
 ## Art
 
@@ -11,6 +15,7 @@ All art used is drawn by me using Pixel Studio
 ### Assets I drew
 
 ![mainbackground] (./assets/egg timer bg.png)
+![appframe] (./assets/egg timer frame.png)
 
 ## Sounds used
 
