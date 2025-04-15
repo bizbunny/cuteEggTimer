@@ -183,37 +183,53 @@ function togglePause() {
         snoozeBtn.textContent = 'Resume';
         remainingTimeWhenPaused = timeLeft;
     } else {
-        snoozeBtn.textContent = 'Snooze (Pause)';
+        snoozeBtn.textContent = 'Snooze';
     }
+}
+
+//play sound
+function playPopSound() {
+    const popSound = document.getElementById('pop-sound');
+    popSound.currentTime = 0; // Rewind to start
+    popSound.play();
 }
 
 // Event Listeners
 startBtn.addEventListener('click', () => {
+    playPopSound();
     showScreen('selection');
 });
 
 backBtn.addEventListener('click', () => {
+    playPopSound();
     showScreen('main');
 });
 
 stopBtn.addEventListener('click', () => {
+    playPopSound();
     stopEggAnimation();
     clearInterval(timer);
     showScreen('main');
 });
 
-snoozeBtn.addEventListener('click', togglePause);
+snoozeBtn.addEventListener('click', () => {
+    playPopSound();
+    togglePause();
+});
 
 cookAgainBtn.addEventListener('click', () => {
+    playPopSound();
     showScreen('main');
 });
 
 exitBtn.addEventListener('click', () => {
+    playPopSound();
     ipcRenderer.send('exit-app');
 });
 
 eggOptions.forEach(option => {
     option.addEventListener('click', () => {
+        playPopSound();
         const duration = parseInt(option.getAttribute('data-time'));
         startCountdown(duration);
     });
