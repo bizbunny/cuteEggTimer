@@ -15,7 +15,7 @@ All art used is drawn by me using Pixel Studio
 ### Assets I drew
 
 ![mainbackground] (assets/egg\ timer\ bg.png)
-![appframe] (assets/egg timer frame.png)
+![appframe] (assets/egg%20timer%20frame.png)
 
 ## Sounds used
 
