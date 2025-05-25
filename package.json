@@ -24,5 +24,8 @@
   "homepage": "https://github.com/bizbunny/cuteEggTimer#readme",
   "devDependencies": {
     "electron": "^35.1.5"
+  },
+  "dependencies": {
+    "electron-packager": "^17.1.2"
   }
 }
