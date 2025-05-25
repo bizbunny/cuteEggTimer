@@ -1,4 +1,4 @@
-node_modules/
+
 node_modules/.bin/electron
 node_modules/.bin/extract-zip
 node_modules/.bin/semver
@@ -896,77 +896,3 @@ node_modules/wrappy/LICENSE
 node_modules/universalify/README.md
 node_modules/universalify/package.json
 node_modules/universalify/LICENSE
-cuteEggTimer-darwin-x64/version
-cuteEggTimer-darwin-x64/LICENSES.chromium.html
-cuteEggTimer-darwin-x64/LICENSE
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/electron.icns
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/renderer.js
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/README.md
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/package.json
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/main.js
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/index.html
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/index.css
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/assets/start menu/egg timer start menu.png
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/assets/start menu/egg timer start button.png
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/assets/sound/78562__joedeshon__alarm_clock_ringing_01.wav
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/assets/sound/463390__vilkas_sound__vs-pop_2.mp3
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/assets/ready in timer menu/egg timer ready in.gif
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/assets/ready in timer menu/egg timer ready in f4.png
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/assets/ready in timer menu/egg timer ready in f3.png
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/assets/ready in timer menu/egg timer ready in f2.png
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/assets/ready in timer menu/egg timer ready in f1.png
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/assets/placement help/egg timer start button placement.png
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/assets/placement help/egg timer frame placement.png
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/assets/placement help/egg timer done placement.png
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/assets/placement help/egg timer choice placement.png
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/assets/frame icons/x button.png
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/assets/frame icons/min button.png
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/assets/egg timer frame.png
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/assets/egg timer bg.png
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/assets/done menu/egg timer snooze button.png
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/assets/done menu/egg timer done.png
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/assets/done menu/egg timer close button.png
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/assets/choice menu/softBoiled.png
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/assets/choice menu/scrambledEggs.png
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/assets/choice menu/hardBoiled.png
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/assets/choice menu/eggToast.png
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/assets/choice menu/egg timer choices text.png
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/assets/choice menu/egg timer choices menu.png
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Resources/app/.gitattributes
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/PkgInfo
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/MacOS/cuteEggTimer
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/Squirrel.framework/Versions/Current
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/Squirrel.framework/Versions/A/Squirrel
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/Squirrel.framework/Versions/A/Resources/ShipIt
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/Squirrel.framework/Squirrel
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/Squirrel.framework/Resources
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/ReactiveObjC.framework/Versions/Current
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/ReactiveObjC.framework/Versions/A/ReactiveObjC
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/ReactiveObjC.framework/Resources
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/ReactiveObjC.framework/ReactiveObjC
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/Mantle.framework/Versions/Current
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/Mantle.framework/Versions/A/Mantle
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/Mantle.framework/Resources
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/Mantle.framework/Mantle
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/Electron Framework.framework/Versions/Current
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/MainMenu.nib
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/icudtl.dat
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/vk_swiftshader_icd.json
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libvk_swiftshader.dylib
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libGLESv2.dylib
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libEGL.dylib
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/Electron Framework.framework/Resources
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/Electron Framework.framework/Libraries
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/Electron Framework.framework/Helpers
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/Electron Framework.framework/Electron Framework
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/cuteEggTimer Helper.app/Contents/PkgInfo
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/cuteEggTimer Helper.app/Contents/MacOS/cuteEggTimer Helper
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/cuteEggTimer Helper (Renderer).app/Contents/PkgInfo
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/cuteEggTimer Helper (Renderer).app/Contents/MacOS/cuteEggTimer Helper (Renderer)
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/cuteEggTimer Helper (Plugin).app/Contents/PkgInfo
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/cuteEggTimer Helper (Plugin).app/Contents/MacOS/cuteEggTimer Helper (Plugin)
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/cuteEggTimer Helper (GPU).app/Contents/PkgInfo
-cuteEggTimer-darwin-x64/cuteEggTimer.app/Contents/Frameworks/cuteEggTimer Helper (GPU).app/Contents/MacOS/cuteEggTimer Helper (GPU)
