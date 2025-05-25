@@ -1,4 +1,4 @@
-
+node_modules/
 node_modules/.bin/electron
 node_modules/.bin/extract-zip
 node_modules/.bin/semver
