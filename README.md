@@ -10,7 +10,7 @@ This entire app is based off of @Nashallery 's app (You can find her on Youtube 
 
 ## Art
 
-All art used is drawn by me using Pixel Studio
+All art used is drawn by me using Pixel Studio. If forked, please use your own art.
 
 ### Assets I drew (that got put into the app)
 
